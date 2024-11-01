@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <img id="logo" src="dolce-gabbana-logo.png" alt="d & g">
+        <div class="nav-menu">
+         <p>Home</p>
+         <p>Services</p>
+         <p>Blog</p>
+         <p>About</p>
+         <p>FAQ</p>
+        </div>
+    </div>
+    <div class="main-sec">
+        <div class="main-text">
+            <h1>Lorem ipsum dolor sit amet<span> consectetur adipisicing elit.</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sint dolorem explicabo unde vitae iusto saepe ducimus labore molestias excepturi facilis nemo, quos cumque dolor placeat qui doloremque natus amet.</p>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="name"></label><br><br>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="email"></label><br><br>
+            <input type="submit" value="Send">
+        </form>
+        </div>
+        <div class="image-banner">
+            <img src="https://images.unsplash.com/photo-1530432999454-016a47c78af3?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="eyewear-banner">
+        </div>
+    </div>
+</body>
+<style>
+    html,body {
+        margin: 0px;
+        padding: 0px;
+    }
+    .head {
+        width: 100%;
+        height: 80px;
+        display: flex;
+    }
+    .nav-menu {
+        width: 100%;
+        padding-right: 95px;
+        display: flex;
+        gap: 45px;
+        align-items: center;
+        justify-content: end;
+        border-bottom: 3px;
+    }
+    .nav-menu p:hover {
+        cursor: pointer;
+        text-decoration: 2px underline red;
+    }
+    #logo {
+        padding-left: 45px;
+        width: 80px;
+        height: 80px;
+    }
+    .main-sec {
+        display: flex;
+        padding: 45px;
+    }
+    .main-text {
+        width: 30%;
+    }
+    .main-text h1 {
+        font-size: 28px;
+        color: rgb(190, 190, 60);
+    }
+    .main-text h1 span {
+        color: blue;
+    }
+    input {
+        padding: 10px 20px;
+        border: none;
+        box-shadow: 0px 0px 4px 0px;
+        border-radius: 50px;
+    }
+    input:focus {
+        outline: none;
+    }
+    input[type="text" i], [type="email" i] {
+        width: 250px;
+    }
+    input[type="submit" i] {
+        background-color: yellow;
+        cursor: pointer;
+    }
+    .image-banner {
+        width: 70%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .image-banner img {
+        border-radius: 40px 100px;
+        width: 80%;
+        height: 70%;
+    }
+</style>
+</html>
